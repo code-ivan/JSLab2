@@ -69,3 +69,8 @@ const auth = new Author('Joe', 'Dou', 'Writer');
 const journal = new Journal(2001, 'Forbes', 27, 10);
 const article = new Article('any', 'Random', auth, journal );
 console.log(article);
+addElement(hTable, auth);
+console.log(hTable[0]);
+addElement(hTable, journal);
+console.log(hTable[1]);
+console.log(hTable.counter);

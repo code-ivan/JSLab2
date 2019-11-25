@@ -83,19 +83,31 @@ function Author(name, lastName, job){
     this.name = name;
     this.lastName = lastName;
     this.job = job;
-};
+}
 function Journal(year, name, number, page){
     this.year = year;
     this.name = name;
     this.number = number;
     this.page = page;
-};
+}
 function Article(udk, name, author, journal){
     this.udk = udk;
     this.name = name;
     this.author = author;
     this.journal = journal;
+}
+const hTable = {
+    counter: 0,
 };
+function addElement(table, obj) {
+    let date = new Date();
+    table[table.counter] = {
+        object: obj,
+        creationDate: date,
+    };
+    table.counter++;
+}
+
 
 
 
